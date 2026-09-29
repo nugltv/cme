@@ -1,0 +1,26 @@
+
+=== d8 h1 mlp8 (L6, noise vars 48) ===
+  seed 0: baseA_worst=+47.19 | heads_off A=+3.45 B_acc=0.36 | mlp_off A=+32.69 B_acc=0.41 | circuit=None
+  seed 1: baseA_worst=+49.13 | heads_off A=-9.74 B_acc=0.36 | mlp_off A=+30.15 B_acc=0.37 | circuit=None
+  seed 2: baseA_worst=+27.64 | heads_off A=+4.33 B_acc=0.36 | mlp_off A=-3.13 B_acc=0.79 | circuit=None
+  seed 3: baseA_worst=+54.55 | heads_off A=-8.15 B_acc=0.36 | mlp_off A=+37.30 B_acc=0.66 | circuit=None
+  seed 4: baseA_worst=+80.28 | heads_off A=+4.53 B_acc=0.64 | mlp_off A=+13.11 B_acc=0.78 | circuit=None
+  seed 5: baseA_worst=+41.85 | heads_off A=+3.38 B_acc=0.64 | mlp_off A=+10.12 B_acc=0.36 | circuit=None
+
+=== d8 h1 mlp16 (L6, noise vars 48) ===
+  seed 0: baseA_worst=+63.74 | heads_off A=+0.92 B_acc=0.36 | mlp_off A=-2.65 B_acc=0.73 | circuit=None
+  seed 1: baseA_worst=+45.97 | heads_off A=-14.12 B_acc=0.64 | mlp_off A=+25.05 B_acc=0.37 | circuit=None
+  seed 2: baseA_worst=+73.20 | heads_off A=-9.58 B_acc=0.64 | mlp_off A=+40.19 B_acc=0.40 | circuit=None
+  seed 3: baseA_worst=+55.85 | heads_off A=-1.69 B_acc=0.36 | mlp_off A=+28.10 B_acc=1.00 | circuit=None
+  seed 4: baseA_worst=+155.77 | heads_off A=-0.98 B_acc=0.64 | mlp_off A=+44.84 B_acc=0.68 | circuit=None
+  seed 5: baseA_worst=+19.91 | heads_off A=+13.77 B_acc=0.64 | mlp_off A=+17.73 B_acc=0.42 | circuit=None
+
+=== d8 h2 mlp8 (L6, noise vars 48) ===
+  seed 0: baseA_worst=+82.05 | heads_off A=+11.25 B_acc=0.36 | mlp_off A=-0.55 B_acc=0.79 | circuit=[('mlp', 7), ('mlp', 3), ('mlp', 6), ('mlp', 0), ('mlp', 2)]
+  seed 1: baseA_worst=+117.70 | heads_off A=-0.52 B_acc=0.36 | mlp_off A=+27.35 B_acc=1.00 | circuit=[('head', 1)]
+  seed 2: baseA_worst=+217.47 | heads_off A=+2.14 B_acc=0.64 | mlp_off A=+18.57 B_acc=0.45 | circuit=None
+  seed 3: baseA_worst=+82.05 | heads_off A=-0.97 B_acc=0.36 | mlp_off A=+43.30 B_acc=0.98 | circuit=[('head', 0)]
+  seed 4: baseA_worst=+72.85 | heads_off A=+1.71 B_acc=0.64 | mlp_off A=+53.37 B_acc=0.95 | circuit=None
+  seed 5: baseA_worst=+35.36 | heads_off A=+1.80 B_acc=0.64 | mlp_off A=+17.20 B_acc=0.73 | circuit=[('head', 0), ('mlp', 1), ('mlp', 5), ('mlp', 2)]
+
+ALL DONE

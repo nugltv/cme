@@ -1,0 +1,11 @@
+--- L=6: training...
+held-out acc: (1.0, 1.0)
+encoding validation: max gap 1.42e-14
+HULL control A-pos L=6 eps=0.01: unknown (unknown) in 1802.2s
+HULL control A-pos L=6 eps=0.05: unknown (unknown) in 1801.1s
+--- L=8: training...
+held-out acc: (1.0, 1.0)
+encoding validation: max gap 1.42e-14
+HULL control A-pos L=8 eps=0.01: unknown (unknown) in 1803.0s
+HULL control A-pos L=8 eps=0.05: unknown (unknown) in 1807.1s
+ALL DONE

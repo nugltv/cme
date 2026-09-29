@@ -1,0 +1,33 @@
+{
+  "p": 5,
+  "d_model": 8,
+  "n_heads": 2,
+  "seed": 0,
+  "circuit": [
+    [
+      "head",
+      0
+    ]
+  ],
+  "encoding_gap": 1.0658141036401503e-14,
+  "acc_B": 1.0,
+  "edited_acc_B": 1.0,
+  "n_sub": 625,
+  "eps0_failures": 0,
+  "radius": 0.002,
+  "radius_str": ">= 0.002",
+  "grid_log": [
+    {
+      "eps": 0.002,
+      "all_certified": true,
+      "seconds": 278.2,
+      "first_fail": null
+    }
+  ],
+  "binding": null,
+  "eps_grid": [
+    0.002
+  ],
+  "per_query_ms": 20000,
+  "seconds": 597.3521115779877
+}

@@ -1,0 +1,258 @@
+{
+  "seconds": 91.05105233192444,
+  "proofs": 225,
+  "subjects": [
+    {
+      "subject": "Subject 1 \u2014 the tidy model",
+      "circuit": [
+        3
+      ],
+      "unedited": {
+        "A high": {
+          "tipping": 0.0,
+          "holds_at_boundary": true
+        },
+        "B high": {
+          "tipping": 0.0,
+          "holds_at_boundary": true
+        },
+        "B low": {
+          "tipping": 0.00029296875,
+          "holds_at_boundary": false
+        }
+      },
+      "edits": [
+        {
+          "edit": "ablation",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B low": {
+            "tipping": 0.00029296875,
+            "holds_at_boundary": false
+          }
+        },
+        {
+          "edit": "weight edit",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B low": {
+            "tipping": 0.00029296875,
+            "holds_at_boundary": false
+          }
+        },
+        {
+          "edit": "steering targeted (dose 4)",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B low": {
+            "tipping": 0.00029296875,
+            "holds_at_boundary": false
+          }
+        },
+        {
+          "edit": "steering diff-of-means (dose 4)",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B low": {
+            "tipping": 0.0087890625,
+            "holds_at_boundary": false
+          }
+        },
+        {
+          "edit": "steering diff-of-means (dose 16)",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B low": {
+            "tipping": 0.034277343749999994,
+            "holds_at_boundary": false
+          }
+        }
+      ]
+    },
+    {
+      "subject": "Subject 2 \u2014 the messy model (tidiness off)",
+      "circuit": [
+        1
+      ],
+      "unedited": {
+        "A high": {
+          "tipping": 0.001171875,
+          "holds_at_boundary": false
+        },
+        "B high": {
+          "tipping": 0.0038085937499999995,
+          "holds_at_boundary": false
+        },
+        "B low": {
+          "tipping": 0.0,
+          "holds_at_boundary": true
+        }
+      },
+      "edits": [
+        {
+          "edit": "ablation",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.0038085937499999995,
+            "holds_at_boundary": false
+          },
+          "B low": {
+            "tipping": 0.0038085937499999995,
+            "holds_at_boundary": false
+          }
+        },
+        {
+          "edit": "weight edit",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.0038085937499999995,
+            "holds_at_boundary": false
+          },
+          "B low": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          }
+        },
+        {
+          "edit": "steering targeted (dose 8)",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.0038085937499999995,
+            "holds_at_boundary": false
+          },
+          "B low": {
+            "tipping": 0.0038085937499999995,
+            "holds_at_boundary": false
+          }
+        },
+        {
+          "edit": "steering diff-of-means (dose 8)",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.031054687499999994,
+            "holds_at_boundary": false
+          },
+          "B low": {
+            "tipping": 0.007617187499999999,
+            "holds_at_boundary": false
+          }
+        },
+        {
+          "edit": "steering diff-of-means (dose 32)",
+          "removal": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          },
+          "B high": {
+            "tipping": 0.1060546875,
+            "holds_at_boundary": false
+          },
+          "B low": {
+            "tipping": 0.0,
+            "holds_at_boundary": true
+          }
+        }
+      ]
+    }
+  ],
+  "dose_sweep": [
+    {
+      "dose": 1,
+      "removal": {
+        "tipping": null,
+        "holds_at_boundary": false
+      }
+    },
+    {
+      "dose": 2,
+      "removal": {
+        "tipping": null,
+        "holds_at_boundary": false
+      }
+    },
+    {
+      "dose": 2.25,
+      "removal": {
+        "tipping": null,
+        "holds_at_boundary": false
+      }
+    },
+    {
+      "dose": 2.5,
+      "removal": {
+        "tipping": null,
+        "holds_at_boundary": false
+      }
+    },
+    {
+      "dose": 2.75,
+      "removal": {
+        "tipping": null,
+        "holds_at_boundary": false
+      }
+    },
+    {
+      "dose": 3,
+      "removal": {
+        "tipping": 0.0,
+        "holds_at_boundary": true
+      }
+    },
+    {
+      "dose": 4,
+      "removal": {
+        "tipping": 0.0,
+        "holds_at_boundary": true
+      }
+    },
+    {
+      "dose": 8,
+      "removal": {
+        "tipping": 0.0,
+        "holds_at_boundary": true
+      }
+    }
+  ]
+}

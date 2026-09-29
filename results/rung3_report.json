@@ -1,0 +1,38 @@
+{
+  "p": 5,
+  "d_model": 8,
+  "n_heads": 2,
+  "L": 5,
+  "noise_vars": 40,
+  "seed": 0,
+  "acc": {
+    "A": 1.0,
+    "B": 1.0
+  },
+  "circuit": [
+    [
+      "head",
+      0
+    ]
+  ],
+  "removal_acc": 0.2,
+  "preservation_acc": 1.0,
+  "chance": 0.2,
+  "summand_independence": 1.0,
+  "certificate": {
+    "encoding_gap": 3.9968028886505635e-15,
+    "removal_proved": true,
+    "control_refuted": true,
+    "independence_radius": {
+      "radius": 0.05,
+      "saturated": true,
+      "queries": 2,
+      "seconds": 4.9
+    },
+    "radius_str": ">= 0.05 (cap)",
+    "pres_correct": 1.0,
+    "pres_unchanged": 1.0,
+    "pres_n": 625
+  },
+  "seconds": 223.9687728881836
+}

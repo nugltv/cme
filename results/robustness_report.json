@@ -1,0 +1,527 @@
+{
+  "tidy": {
+    "circuit": [
+      3
+    ],
+    "rows": [
+      {
+        "edit": "control (no edit)",
+        "note": "yardstick: removal must fail; preservation radius = B's natural margin",
+        "tests_pass": false,
+        "removal": {
+          "radius": null,
+          "saturated": false,
+          "first_failure": 0.0,
+          "counterexample_at_failure": [
+            0.6,
+            0.0
+          ],
+          "queries": 1,
+          "seconds": 0.03
+        },
+        "preservation_high": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            1.0,
+            0.49980468749999996
+          ],
+          "queries": 12,
+          "seconds": 0.64
+        },
+        "preservation_low": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            0.0,
+            0.49999355637866016
+          ],
+          "queries": 12,
+          "seconds": 0.91
+        },
+        "preservation_radius": 0.099609375
+      },
+      {
+        "edit": "ablation",
+        "note": "neurons [3] switched off",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.08
+        },
+        "preservation_high": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            0.9505489517633876,
+            0.49980468749999996
+          ],
+          "queries": 12,
+          "seconds": 0.44
+        },
+        "preservation_low": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            1.0,
+            0.4998010081946537
+          ],
+          "queries": 12,
+          "seconds": 0.69
+        },
+        "preservation_radius": 0.099609375
+      },
+      {
+        "edit": "weight edit",
+        "note": "wires from neurons [3] to head A cut",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.11
+        },
+        "preservation_high": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            0.33467003859480254,
+            0.49992180461063135
+          ],
+          "queries": 12,
+          "seconds": 0.63
+        },
+        "preservation_low": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            1.0,
+            0.4998238173130979
+          ],
+          "queries": 12,
+          "seconds": 1.05
+        },
+        "preservation_radius": 0.099609375
+      },
+      {
+        "edit": "steering targeted (dose 4)",
+        "note": "smallest dose that passes the tests",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.14
+        },
+        "preservation_high": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            0.0,
+            0.49980468749999996
+          ],
+          "queries": 12,
+          "seconds": 0.44
+        },
+        "preservation_low": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            1.0,
+            0.4998010081946537
+          ],
+          "queries": 12,
+          "seconds": 0.76
+        },
+        "preservation_radius": 0.099609375
+      },
+      {
+        "edit": "steering targeted (dose 16)",
+        "note": "4x the minimal dose",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.14
+        },
+        "preservation_high": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            0.9505489517633876,
+            0.49980468749999996
+          ],
+          "queries": 12,
+          "seconds": 0.44
+        },
+        "preservation_low": {
+          "radius": 0.099609375,
+          "saturated": false,
+          "first_failure": 0.1001953125,
+          "counterexample_at_failure": [
+            0.0,
+            0.5001953125
+          ],
+          "queries": 12,
+          "seconds": 0.67
+        },
+        "preservation_radius": 0.099609375
+      },
+      {
+        "edit": "steering diff-of-means (dose 4)",
+        "note": "smallest dose that passes the tests; no neuron chosen by hand",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.13
+        },
+        "preservation_high": {
+          "radius": 0.1083984375,
+          "saturated": false,
+          "first_failure": 0.108984375,
+          "counterexample_at_failure": [
+            1.0,
+            0.49101562499999996
+          ],
+          "queries": 12,
+          "seconds": 0.48
+        },
+        "preservation_low": {
+          "radius": 0.0908203125,
+          "saturated": false,
+          "first_failure": 0.09140625,
+          "counterexample_at_failure": [
+            1.0,
+            0.49140625000000004
+          ],
+          "queries": 12,
+          "seconds": 0.69
+        },
+        "preservation_radius": 0.0908203125
+      },
+      {
+        "edit": "steering diff-of-means (dose 16)",
+        "note": "4x the minimal dose",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.14
+        },
+        "preservation_high": {
+          "radius": 0.13359374999999998,
+          "saturated": false,
+          "first_failure": 0.13417968749999998,
+          "counterexample_at_failure": [
+            1.0,
+            0.4658615496663368
+          ],
+          "queries": 12,
+          "seconds": 0.49
+        },
+        "preservation_low": {
+          "radius": 0.06562499999999999,
+          "saturated": false,
+          "first_failure": 0.06621093749999998,
+          "counterexample_at_failure": [
+            1.0,
+            0.4662109375
+          ],
+          "queries": 12,
+          "seconds": 0.76
+        },
+        "preservation_radius": 0.06562499999999999
+      }
+    ]
+  },
+  "messy": {
+    "circuit": [
+      1
+    ],
+    "rows": [
+      {
+        "edit": "control (no edit)",
+        "note": "yardstick: removal must fail; preservation radius = B's natural margin",
+        "tests_pass": false,
+        "removal": {
+          "radius": null,
+          "saturated": false,
+          "first_failure": 0.0,
+          "counterexample_at_failure": [
+            0.9655963204824762,
+            0.02604458791843122
+          ],
+          "queries": 1,
+          "seconds": 0.05
+        },
+        "preservation_high": {
+          "radius": 0.09609375,
+          "saturated": false,
+          "first_failure": 0.0966796875,
+          "counterexample_at_failure": [
+            0.08866463705287124,
+            0.5034000472344502
+          ],
+          "queries": 12,
+          "seconds": 0.75
+        },
+        "preservation_low": {
+          "radius": 0.1001953125,
+          "saturated": false,
+          "first_failure": 0.10078124999999999,
+          "counterexample_at_failure": [
+            0.9630111180940113,
+            0.50078125
+          ],
+          "queries": 12,
+          "seconds": 1.79
+        },
+        "preservation_radius": 0.09609375
+      },
+      {
+        "edit": "ablation",
+        "note": "neurons [1] switched off",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.26
+        },
+        "preservation_high": {
+          "radius": 0.09609375,
+          "saturated": false,
+          "first_failure": 0.0966796875,
+          "counterexample_at_failure": [
+            0.0,
+            0.5033203125
+          ],
+          "queries": 12,
+          "seconds": 0.51
+        },
+        "preservation_low": {
+          "radius": 0.09609375,
+          "saturated": false,
+          "first_failure": 0.0966796875,
+          "counterexample_at_failure": [
+            1.0,
+            0.4966796875
+          ],
+          "queries": 12,
+          "seconds": 1.36
+        },
+        "preservation_radius": 0.09609375
+      },
+      {
+        "edit": "weight edit",
+        "note": "wires from neurons [1] to head A cut",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.33
+        },
+        "preservation_high": {
+          "radius": 0.09609375,
+          "saturated": false,
+          "first_failure": 0.0966796875,
+          "counterexample_at_failure": [
+            0.0,
+            0.5033203125
+          ],
+          "queries": 12,
+          "seconds": 0.56
+        },
+        "preservation_low": {
+          "radius": 0.1001953125,
+          "saturated": false,
+          "first_failure": 0.10078124999999999,
+          "counterexample_at_failure": [
+            1.0,
+            0.50078125
+          ],
+          "queries": 12,
+          "seconds": 1.81
+        },
+        "preservation_radius": 0.09609375
+      },
+      {
+        "edit": "steering targeted (dose 8)",
+        "note": "smallest dose that passes the tests",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.42
+        },
+        "preservation_high": {
+          "radius": 0.09609375,
+          "saturated": false,
+          "first_failure": 0.0966796875,
+          "counterexample_at_failure": [
+            0.0992267591495469,
+            0.5033203125
+          ],
+          "queries": 12,
+          "seconds": 0.56
+        },
+        "preservation_low": {
+          "radius": 0.09609375,
+          "saturated": false,
+          "first_failure": 0.0966796875,
+          "counterexample_at_failure": [
+            0.9807856584057232,
+            0.4966796875
+          ],
+          "queries": 12,
+          "seconds": 1.53
+        },
+        "preservation_radius": 0.09609375
+      },
+      {
+        "edit": "steering targeted (dose 32)",
+        "note": "4x the minimal dose",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.23
+        },
+        "preservation_high": {
+          "radius": 0.09609375,
+          "saturated": false,
+          "first_failure": 0.0966796875,
+          "counterexample_at_failure": [
+            0.08866463705287124,
+            0.5034000472344502
+          ],
+          "queries": 12,
+          "seconds": 0.44
+        },
+        "preservation_low": {
+          "radius": 0.09609375,
+          "saturated": false,
+          "first_failure": 0.0966796875,
+          "counterexample_at_failure": [
+            1.0,
+            0.4966796875
+          ],
+          "queries": 12,
+          "seconds": 1.32
+        },
+        "preservation_radius": 0.09609375
+      },
+      {
+        "edit": "steering diff-of-means (dose 8)",
+        "note": "smallest dose that passes the tests; no neuron chosen by hand",
+        "tests_pass": true,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.85
+        },
+        "preservation_high": {
+          "radius": 0.06855468749999999,
+          "saturated": false,
+          "first_failure": 0.069140625,
+          "counterexample_at_failure": [
+            0.0,
+            0.530859375
+          ],
+          "queries": 12,
+          "seconds": 1.0
+        },
+        "preservation_low": {
+          "radius": 0.09199218749999999,
+          "saturated": false,
+          "first_failure": 0.092578125,
+          "counterexample_at_failure": [
+            0.9988170979971821,
+            0.49257812500000003
+          ],
+          "queries": 12,
+          "seconds": 2.94
+        },
+        "preservation_radius": 0.06855468749999999
+      },
+      {
+        "edit": "steering diff-of-means (dose 32)",
+        "note": "4x the minimal dose",
+        "tests_pass": false,
+        "removal": {
+          "radius": 0.6,
+          "saturated": true,
+          "first_failure": null,
+          "counterexample_at_failure": null,
+          "queries": 2,
+          "seconds": 0.07
+        },
+        "preservation_high": {
+          "radius": null,
+          "saturated": false,
+          "first_failure": 0.0,
+          "counterexample_at_failure": [
+            0.0,
+            0.6
+          ],
+          "queries": 1,
+          "seconds": 0.04
+        },
+        "preservation_low": {
+          "radius": 0.165234375,
+          "saturated": false,
+          "first_failure": 0.1658203125,
+          "counterexample_at_failure": [
+            1.0,
+            0.5658203125000001
+          ],
+          "queries": 12,
+          "seconds": 0.55
+        },
+        "preservation_radius": null
+      }
+    ]
+  },
+  "total_proving_seconds": 73.4
+}

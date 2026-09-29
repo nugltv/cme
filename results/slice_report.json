@@ -1,0 +1,54 @@
+{
+  "trained_accuracy": {
+    "A": 0.9995,
+    "B": 0.99985
+  },
+  "skill_A_circuit": [
+    3
+  ],
+  "skill_B_circuit": [
+    1
+  ],
+  "accuracy_after_edit": {
+    "A": 0.50235,
+    "B": 0.9998
+  },
+  "certificates": [
+    {
+      "name": "Skill A now says LOW everywhere it should say HIGH (x0>=0.6)",
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "counterexample": null,
+      "grid_violations": 0,
+      "grid_points": 40401,
+      "seconds": 0.07
+    },
+    {
+      "name": "Skill B still says HIGH everywhere it should (x1>=0.6)",
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "counterexample": null,
+      "grid_violations": 0,
+      "grid_points": 40401,
+      "seconds": 0.11
+    },
+    {
+      "name": "Skill B still says LOW everywhere it should (x1<=0.4)",
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "counterexample": null,
+      "grid_violations": 0,
+      "grid_points": 40401,
+      "seconds": 0.12
+    }
+  ],
+  "control_before_edit": {
+    "name": "ORIGINAL (unedited) model says HIGH everywhere it should (x0>=0.6)",
+    "proved": true,
+    "status": "proved (no counterexample exists)",
+    "counterexample": null,
+    "grid_violations": 0,
+    "grid_points": 40401,
+    "seconds": 0.11
+  }
+}

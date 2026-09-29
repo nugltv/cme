@@ -1,0 +1,245 @@
+{
+  "doses": [
+    0,
+    0.5,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64
+  ],
+  "tidy": [
+    {
+      "dose": 0,
+      "preservation_radius": 0.099609375,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 0.5,
+      "preservation_radius": 0.0984375,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 1,
+      "preservation_radius": 0.097265625,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 2,
+      "preservation_radius": 0.09550781250000001,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 3,
+      "preservation_radius": 0.0931640625,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 4,
+      "preservation_radius": 0.0908203125,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 5,
+      "preservation_radius": 0.0890625,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 6,
+      "preservation_radius": 0.08671875000000001,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 8,
+      "preservation_radius": 0.0826171875,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 10,
+      "preservation_radius": 0.07851562499999999,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 12,
+      "preservation_radius": 0.073828125,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 16,
+      "preservation_radius": 0.06562499999999999,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 20,
+      "preservation_radius": 0.056835937499999996,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 24,
+      "preservation_radius": 0.0486328125,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 32,
+      "preservation_radius": 0.03164062499999999,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 40,
+      "preservation_radius": 0.014648437499999998,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 48,
+      "preservation_radius": null,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 64,
+      "preservation_radius": null,
+      "removal_radius": 0.6,
+      "removes_A": true
+    }
+  ],
+  "messy": [
+    {
+      "dose": 0,
+      "preservation_radius": 0.09609375,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 0.5,
+      "preservation_radius": 0.094921875,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 1,
+      "preservation_radius": 0.092578125,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 2,
+      "preservation_radius": 0.0890625,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 3,
+      "preservation_radius": 0.08554687500000001,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 4,
+      "preservation_radius": 0.0826171875,
+      "removal_radius": null,
+      "removes_A": false
+    },
+    {
+      "dose": 5,
+      "preservation_radius": 0.0791015625,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 6,
+      "preservation_radius": 0.0755859375,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 8,
+      "preservation_radius": 0.06855468749999999,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 10,
+      "preservation_radius": 0.061523437499999986,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 12,
+      "preservation_radius": 0.0544921875,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 16,
+      "preservation_radius": 0.0416015625,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 20,
+      "preservation_radius": 0.029296874999999997,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 24,
+      "preservation_radius": 0.017578125,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 32,
+      "preservation_radius": null,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 40,
+      "preservation_radius": null,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 48,
+      "preservation_radius": null,
+      "removal_radius": 0.6,
+      "removes_A": true
+    },
+    {
+      "dose": 64,
+      "preservation_radius": null,
+      "removal_radius": 0.6,
+      "removes_A": true
+    }
+  ],
+  "eps_max": 0.6,
+  "tol": 0.001,
+  "seconds": 134.25375986099243
+}

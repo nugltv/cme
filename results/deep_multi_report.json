@@ -1,0 +1,281 @@
+{
+  "train_seed": 1,
+  "skipped_seeds": [
+    {
+      "seed": 0,
+      "why": "no test-passing ablation"
+    }
+  ],
+  "regimes": {
+    "unrestricted": {
+      "circuit": [
+        [
+          2,
+          6
+        ]
+      ],
+      "why": "the free search's pick (run_deep.py's baseline)",
+      "found_by": "greedy"
+    },
+    "layer 1 only": {
+      "circuit": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "why": "bottleneck layer off-limits; must dismantle the XOR machinery",
+      "found_by": "exhaustive small-subset search (greedy missed it \u2014 the XOR pieces cancel in pairs, so no single knockout looks helpful)"
+    },
+    "detour": {
+      "circuit": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "why": "the unrestricted circuit's neurons banned; second-best pathway",
+      "found_by": "exhaustive small-subset search (greedy missed it \u2014 the XOR pieces cancel in pairs, so no single knockout looks helpful)"
+    }
+  },
+  "rows": [
+    {
+      "regime": "unrestricted",
+      "circuit": [
+        [
+          2,
+          6
+        ]
+      ],
+      "edit": "ablation",
+      "note": "1 neuron(s) switched off",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.08984375,
+        "saturated": false
+      }
+    },
+    {
+      "regime": "unrestricted",
+      "circuit": [
+        [
+          2,
+          6
+        ]
+      ],
+      "edit": "weight edit",
+      "note": "wires from the layer-2 circuit neurons to head A cut",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.09375,
+        "saturated": false
+      }
+    },
+    {
+      "regime": "unrestricted",
+      "circuit": [
+        [
+          2,
+          6
+        ]
+      ],
+      "edit": "steering targeted (dose 32)",
+      "note": "circuit neurons pushed down; smallest dose that passes the tests",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.08984375,
+        "saturated": false
+      }
+    },
+    {
+      "regime": "layer 1 only",
+      "circuit": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "edit": "ablation",
+      "note": "4 neuron(s) switched off",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.07421875,
+        "saturated": false
+      }
+    },
+    {
+      "regime": "layer 1 only",
+      "circuit": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "edit": "steering targeted (dose 8)",
+      "note": "circuit neurons pushed down; smallest dose that passes the tests",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.076171875,
+        "saturated": false
+      }
+    },
+    {
+      "regime": "detour",
+      "circuit": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "edit": "ablation",
+      "note": "4 neuron(s) switched off",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.07421875,
+        "saturated": false
+      }
+    },
+    {
+      "regime": "detour",
+      "circuit": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "edit": "steering targeted (dose 8)",
+      "note": "circuit neurons pushed down; smallest dose that passes the tests",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.076171875,
+        "saturated": false
+      }
+    }
+  ],
+  "control_radii": {
+    "removal": {
+      "radius": null,
+      "saturated": false
+    },
+    "preservation": {
+      "radius": 0.09375,
+      "saturated": false
+    },
+    "queries": 22
+  },
+  "seconds": 2261.700241804123
+}

@@ -1,0 +1,36 @@
+{
+  "route_B_constructed": {
+    "edit": [
+      0,
+      1
+    ],
+    "control_A_proved_before_edit": true,
+    "coarse_test": {
+      "removal_looks_done": true,
+      "b_looks_preserved": true,
+      "passed": true,
+      "test_points_per_region": 225
+    },
+    "fine_grid_201x201_survivors": 0,
+    "fine_grid_201x201_points": 40401,
+    "random_test_survivors": 0,
+    "random_test_points": 300,
+    "solver_removal_proved": false,
+    "solver_status": "FAILED (solver found a counterexample)",
+    "counterexample": {
+      "x0": 0.8152997002997003,
+      "x1": 0.0
+    },
+    "counterexample_logit_numeric": 0.00029970029965548095,
+    "survivor_area_fraction": 0.001998001998001998,
+    "preservation_B_proved": true,
+    "sliver_center": 0.815,
+    "sliver_active_halfwidth": 0.0003
+  },
+  "route_A_search": {
+    "seeds_searched": 200,
+    "candidates_test_approved": 233,
+    "proved_genuinely_removed": 233,
+    "illusions": []
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "verdict": "ALL CHECKS PASSED",
+  "seconds": 38.38581681251526,
+  "checks": [
+    {
+      "name": "P2 certified radius",
+      "passed": true,
+      "radius": 0.099609375,
+      "first_failure": 0.1001953125,
+      "queries": 12,
+      "query_budget": 12,
+      "reproved_at_radius": true,
+      "refuted_past_radius": true
+    },
+    {
+      "name": "P3 illusion vs any grid",
+      "passed": true,
+      "grids": [
+        {
+          "grid": "10x10",
+          "grid_points": 100,
+          "sliver_center": 0.6222222222222222,
+          "sliver_width": 0.011111111111111112,
+          "pocket_fraction_of_region": 0.027777777777777776,
+          "grid_fooled": true,
+          "pre_edit_model_proved_correct": true,
+          "preservation_proved": true,
+          "solver_refuted_removal": true,
+          "survivor_x0": 0.6276767676767676,
+          "survivor_where_predicted": true,
+          "passed": true
+        },
+        {
+          "grid": "50x50",
+          "grid_points": 2500,
+          "sliver_center": 0.6040816326530613,
+          "sliver_width": 0.0020408163265306124,
+          "pocket_fraction_of_region": 0.005102040816326531,
+          "grid_fooled": true,
+          "pre_edit_model_proved_correct": true,
+          "preservation_proved": true,
+          "solver_refuted_removal": true,
+          "survivor_x0": 0.6050985818056036,
+          "survivor_where_predicted": true,
+          "passed": true
+        },
+        {
+          "grid": "100x100",
+          "grid_points": 10000,
+          "sliver_center": 0.602020202020202,
+          "sliver_width": 0.00101010101010101,
+          "pocket_fraction_of_region": 0.002525252525252525,
+          "grid_fooled": true,
+          "pre_edit_model_proved_correct": true,
+          "preservation_proved": true,
+          "solver_refuted_removal": true,
+          "survivor_x0": 0.6015160032023438,
+          "survivor_where_predicted": true,
+          "passed": true
+        },
+        {
+          "grid": "500x500",
+          "grid_points": 250000,
+          "sliver_center": 0.6004008016032064,
+          "sliver_width": 0.0002004008016032064,
+          "pocket_fraction_of_region": 0.000501002004008016,
+          "grid_fooled": true,
+          "pre_edit_model_proved_correct": true,
+          "preservation_proved": true,
+          "solver_refuted_removal": true,
+          "survivor_x0": 0.6005009685481146,
+          "survivor_where_predicted": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "Corollary 1 adaptive tester defeated",
+      "passed": true,
+      "queries": 300,
+      "tester_approves_genuine_edit": true,
+      "tester_approves_gadgeted_model": true,
+      "transcripts_identical": true,
+      "gadget": {
+        "center": 0.975,
+        "halfwidth": 0.012500000000000011,
+        "bump_height": 12.90372904248577,
+        "logit_cap": 5.451864521242885
+      },
+      "parent_model_proved_correct": true,
+      "preservation_proved": true,
+      "solver_refuted_removal": true,
+      "survivor_x0": 0.975,
+      "survivor_inside_gadget": true
+    },
+    {
+      "name": "P4 steering algebra",
+      "passed": true,
+      "circuit": [
+        1
+      ],
+      "a_leftover_identity": [
+        {
+          "dose": 2.0,
+          "max_abs_gap": 1.7763568394002505e-14,
+          "passed": true
+        },
+        {
+          "dose": 8.0,
+          "max_abs_gap": 0.0,
+          "passed": true
+        },
+        {
+          "dose": 32.0,
+          "max_abs_gap": 0.0,
+          "passed": true
+        }
+      ],
+      "b_threshold": {
+        "dose": 5.90827785071739,
+        "max_abs_gap": 0.0,
+        "solver_verdicts_match": true,
+        "passed": true
+      },
+      "d_collateral": [
+        {
+          "dose": 0.5,
+          "stable_points": 156071,
+          "max_abs_gap": 2.3078761124395442e-14,
+          "patterns_seen": 11,
+          "passed": true
+        },
+        {
+          "dose": 1.0,
+          "stable_points": 120294,
+          "max_abs_gap": 1.6903145549918008e-14,
+          "patterns_seen": 7,
+          "passed": true
+        },
+        {
+          "dose": 2.0,
+          "stable_points": 69931,
+          "max_abs_gap": 1.9595436384634013e-14,
+          "patterns_seen": 6,
+          "passed": true
+        },
+        {
+          "dose": 4.0,
+          "stable_points": 17410,
+          "max_abs_gap": 1.787459069646502e-14,
+          "patterns_seen": 1,
+          "passed": true
+        },
+        {
+          "dose": 8.0,
+          "stable_points": 0,
+          "max_abs_gap": null,
+          "patterns_seen": 0,
+          "passed": null
+        }
+      ]
+    }
+  ]
+}

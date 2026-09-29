@@ -1,0 +1,264 @@
+{
+  "acc": {
+    "A": 1.0,
+    "B": 1.0
+  },
+  "rows": [
+    {
+      "edit": "ablation [head [0], MLP [1, 5, 2]]",
+      "note": "certified edit; head read-out zeroed + MLP incoming wires cut",
+      "tests_pass": true,
+      "removal_verdict": "proved",
+      "preservation_verdict": "proved",
+      "removal_radius": {
+        "radius": 0.015625,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.0125,
+        "saturated": false
+      },
+      "numeric_accA": 0.6320679320679321,
+      "numeric_accB": 1.0,
+      "raw_status": {
+        "removal": "proved (no counterexample exists)",
+        "pres_pos": "proved (no counterexample exists)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    },
+    {
+      "edit": "weight-edit [head [0], MLP [1, 5, 2]]",
+      "note": "head read-out zeroed + MLP OUTGOING wires cut (neurons still fire, nothing listens)",
+      "tests_pass": true,
+      "removal_verdict": "proved",
+      "preservation_verdict": "proved",
+      "removal_radius": {
+        "radius": 0.015625,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.0125,
+        "saturated": false
+      },
+      "numeric_accA": 0.6320679320679321,
+      "numeric_accB": 1.0,
+      "raw_status": {
+        "removal": "proved (no counterexample exists)",
+        "pres_pos": "proved (no counterexample exists)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    },
+    {
+      "edit": "steering targeted (dose 2)",
+      "note": "least-norm residual push driving MLP [1, 5, 2] pre-activations down, scaled 2x",
+      "tests_pass": false,
+      "removal_verdict": "refuted",
+      "preservation_verdict": "proved",
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.034375,
+        "saturated": false
+      },
+      "numeric_accA": 1.0,
+      "numeric_accB": 1.0,
+      "raw_status": {
+        "removal": "FAILED (solver found a counterexample)",
+        "pres_pos": "proved (no counterexample exists)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    },
+    {
+      "edit": "steering targeted (dose 8)",
+      "note": "least-norm residual push driving MLP [1, 5, 2] pre-activations down, scaled 8x",
+      "tests_pass": false,
+      "removal_verdict": "refuted",
+      "preservation_verdict": "proved",
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.03125,
+        "saturated": false
+      },
+      "numeric_accA": 0.7238761238761239,
+      "numeric_accB": 1.0,
+      "raw_status": {
+        "removal": "FAILED (solver found a counterexample)",
+        "pres_pos": "proved (no counterexample exists)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    },
+    {
+      "edit": "steering targeted (dose 32)",
+      "note": "least-norm residual push driving MLP [1, 5, 2] pre-activations down, scaled 32x",
+      "tests_pass": false,
+      "removal_verdict": "refuted",
+      "preservation_verdict": "unknown",
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.015625,
+        "saturated": false
+      },
+      "numeric_accA": 0.7222777222777222,
+      "numeric_accB": 1.0,
+      "raw_status": {
+        "removal": "FAILED (solver found a counterexample)",
+        "pres_pos": "unknown (unknown)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 1)",
+      "note": "residual nudged by 1x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_verdict": "refuted",
+      "preservation_verdict": "unknown",
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.028125,
+        "saturated": false
+      },
+      "numeric_accA": 1.0,
+      "numeric_accB": 1.0,
+      "raw_status": {
+        "removal": "FAILED (solver found a counterexample)",
+        "pres_pos": "proved (no counterexample exists)",
+        "pres_neg": "unknown (unknown)"
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 2)",
+      "note": "residual nudged by 2x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_verdict": "refuted",
+      "preservation_verdict": "proved",
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.009375000000000001,
+        "saturated": false
+      },
+      "numeric_accA": 0.7831168831168831,
+      "numeric_accB": 1.0,
+      "raw_status": {
+        "removal": "FAILED (solver found a counterexample)",
+        "pres_pos": "proved (no counterexample exists)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 4)",
+      "note": "residual nudged by 4x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_verdict": "undecided",
+      "preservation_verdict": "undecided",
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "numeric_accA": 0.7831168831168831,
+      "numeric_accB": 0.9752752752752752,
+      "raw_status": {
+        "removal": "relaxation refuted (FRACTIONAL witness \u2014 discrete claim undecided by this query)",
+        "pres_pos": "relaxation refuted (FRACTIONAL witness \u2014 discrete claim undecided by this query)",
+        "pres_neg": "unknown (unknown)"
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 8)",
+      "note": "residual nudged by 8x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_verdict": "undecided",
+      "preservation_verdict": "undecided",
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "numeric_accA": 0.637062937062937,
+      "numeric_accB": 0.648948948948949,
+      "raw_status": {
+        "removal": "relaxation refuted (FRACTIONAL witness \u2014 discrete claim undecided by this query)",
+        "pres_pos": "relaxation refuted (FRACTIONAL witness \u2014 discrete claim undecided by this query)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 16)",
+      "note": "residual nudged by 16x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_verdict": "proved",
+      "preservation_verdict": "undecided",
+      "removal_radius": {
+        "radius": 0.05,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "numeric_accA": 0.6320679320679321,
+      "numeric_accB": 0.6431431431431431,
+      "raw_status": {
+        "removal": "proved (no counterexample exists)",
+        "pres_pos": "relaxation refuted (FRACTIONAL witness \u2014 discrete claim undecided by this query)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 32)",
+      "note": "residual nudged by 32x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_verdict": "proved",
+      "preservation_verdict": "refuted",
+      "removal_radius": {
+        "radius": 0.05,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "numeric_accA": 0.6320679320679321,
+      "numeric_accB": 0.6431431431431431,
+      "raw_status": {
+        "removal": "proved (no counterexample exists)",
+        "pres_pos": "FAILED (solver found a counterexample)",
+        "pres_neg": "proved (no counterexample exists)"
+      }
+    }
+  ],
+  "circuit": {
+    "heads": [
+      0
+    ],
+    "mlps": [
+      1,
+      5,
+      2
+    ]
+  },
+  "eps0": 0.005,
+  "eps_max": 0.05,
+  "tol": 0.005,
+  "seconds": 4842.937113523483
+}

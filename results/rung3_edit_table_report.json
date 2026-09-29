@@ -1,0 +1,92 @@
+{
+  "acc": {
+    "A": 1.0,
+    "B": 1.0
+  },
+  "circuit": [
+    [
+      "head",
+      0
+    ]
+  ],
+  "chance": 0.2,
+  "rows": [
+    {
+      "edit": "ablation = weight-edit [head [0]]",
+      "reaches_head": true,
+      "note": "head read-out zeroed; for a head there is no incoming/outgoing distinction, so ablation and weight-edit coincide",
+      "summand_independence": 1.0,
+      "skillA_acc": 0.2,
+      "skillB_acc": 1.0
+    },
+    {
+      "edit": "steering diff-of-means (dose 1)",
+      "reaches_head": false,
+      "note": "residual pushed 1x along the summand diff-of-means axis (cannot reach the head)",
+      "summand_independence": 0.0,
+      "skillA_acc": 1.0,
+      "skillB_acc": 1.0
+    },
+    {
+      "edit": "steering diff-of-means (dose 2)",
+      "reaches_head": false,
+      "note": "residual pushed 2x along the summand diff-of-means axis (cannot reach the head)",
+      "summand_independence": 0.0,
+      "skillA_acc": 0.92,
+      "skillB_acc": 0.88
+    },
+    {
+      "edit": "steering diff-of-means (dose 4)",
+      "reaches_head": false,
+      "note": "residual pushed 4x along the summand diff-of-means axis (cannot reach the head)",
+      "summand_independence": 0.0,
+      "skillA_acc": 0.28,
+      "skillB_acc": 0.52
+    },
+    {
+      "edit": "steering diff-of-means (dose 8)",
+      "reaches_head": false,
+      "note": "residual pushed 8x along the summand diff-of-means axis (cannot reach the head)",
+      "summand_independence": 0.0,
+      "skillA_acc": 0.16,
+      "skillB_acc": 0.2
+    },
+    {
+      "edit": "steering diff-of-means (dose 16)",
+      "reaches_head": false,
+      "note": "residual pushed 16x along the summand diff-of-means axis (cannot reach the head)",
+      "summand_independence": 0.0,
+      "skillA_acc": 0.04,
+      "skillB_acc": 0.24
+    },
+    {
+      "edit": "steering diff-of-means (dose 32)",
+      "reaches_head": false,
+      "note": "residual pushed 32x along the summand diff-of-means axis (cannot reach the head)",
+      "summand_independence": 0.0,
+      "skillA_acc": 0.24,
+      "skillB_acc": 0.16
+    }
+  ],
+  "anchors": {
+    "encoding_gap": 3.9968028886505635e-15,
+    "ablation": {
+      "status": "proved",
+      "proved": true,
+      "radius": ">= 0.05 (cap)",
+      "saturated": true
+    },
+    "control": {
+      "status": "refuted (a summand-only change moves an output logit by more than the bound)",
+      "refuted": true
+    },
+    "steering_dose": 8,
+    "steering": {
+      "status": "refuted (a summand-only change moves an output logit by more than the bound)",
+      "refuted": true
+    }
+  },
+  "eps_max": 0.05,
+  "tol": 0.005,
+  "seconds": 238.58060479164124
+}

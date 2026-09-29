@@ -1,0 +1,131 @@
+{
+  "train_seed": 1,
+  "skipped_seeds": [
+    {
+      "seed": 0,
+      "why": "no test-passing ablation",
+      "acc_A": 0.9943,
+      "acc_B": 0.9994,
+      "head_A_bias": -0.71920513019111
+    }
+  ],
+  "control": {
+    "A high box 1": {
+      "proved": true
+    },
+    "A high box 2": {
+      "proved": true
+    },
+    "A low box 1": {
+      "proved": true
+    },
+    "A low box 2": {
+      "proved": true
+    },
+    "B high": {
+      "proved": true
+    },
+    "B low": {
+      "proved": true
+    }
+  },
+  "circuit": [
+    [
+      2,
+      6
+    ]
+  ],
+  "weight_edit_note": null,
+  "edits": [
+    {
+      "edit": "ablation",
+      "note": "neurons [(2, 6)] switched off",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.08984375,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "weight edit",
+      "note": "wires from the layer-2 circuit neurons to head A cut",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.09375,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering targeted (dose 32)",
+      "note": "circuit neurons in both layers pushed down; smallest dose that passes the tests",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.08984375,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering diff-of-means @L2 (dose 32)",
+      "note": "smallest dose that passes the tests",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": 0.076171875,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering diff-of-means @L2 (dose 128)",
+      "note": "4x the minimal dose; FAILS the ordinary tests",
+      "tests_pass": false,
+      "removal_proved": true,
+      "preservation_proved": false,
+      "removal_radius": {
+        "radius": 0.5,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      }
+    }
+  ],
+  "control_radii": {
+    "removal": {
+      "radius": null,
+      "saturated": false
+    },
+    "preservation": {
+      "radius": 0.09375,
+      "saturated": false
+    },
+    "queries": 22
+  },
+  "seconds": 2759.486349582672,
+  "notes": [
+    "diff-of-means steering at layer 1: NO dose up to 64 passes the ordinary tests \u2014 every dose either leaves skill A visibly alive or visibly breaks skill B. Where you steer matters."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "acc": {
+    "A": 1.0,
+    "B": 1.0
+  },
+  "rows": [
+    {
+      "edit": "ablation [head [0], MLP [1, 5, 2]]",
+      "note": "the certified edit",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": 0.015625,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.0125,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 1)",
+      "note": "residual nudged by 1x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_proved": false,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.028125,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 2)",
+      "note": "residual nudged by 2x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_proved": false,
+      "preservation_proved": true,
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.021875000000000002,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 4)",
+      "note": "residual nudged by 4x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_proved": false,
+      "preservation_proved": false,
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 8)",
+      "note": "residual nudged by 8x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_proved": false,
+      "preservation_proved": false,
+      "removal_radius": {
+        "radius": null,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 16)",
+      "note": "residual nudged by 16x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_proved": true,
+      "preservation_proved": false,
+      "removal_radius": {
+        "radius": 0.05,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 32)",
+      "note": "residual nudged by 32x the diff-of-means vector",
+      "tests_pass": false,
+      "removal_proved": true,
+      "preservation_proved": false,
+      "removal_radius": {
+        "radius": 0.05,
+        "saturated": true
+      },
+      "preservation_radius": {
+        "radius": null,
+        "saturated": false
+      }
+    }
+  ],
+  "eps0": 0.005,
+  "eps_max": 0.05,
+  "tol": 0.005,
+  "seconds": 3851.9531242847443
+}

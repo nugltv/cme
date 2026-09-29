@@ -1,0 +1,28 @@
+# Bound propagation ONLY — kept separate so the exact pipeline
+# (requirements.txt: numpy + z3-solver) stays dependency-light and pure.
+#
+# torch has no Python 3.14 wheels yet, and the PyPI `auto_LiRPA` is stale (pins
+# torch<1.13, whose wheels stop at cp310). So DO NOT `pip install -r` this file
+# naively. Use an isolated Python 3.12 env and this exact order (auto_LiRPA from
+# GitHub HEAD, which allows modern torch):
+#
+#   uv venv --python 3.12 .venv-boundprop
+#   # 1) CPU torch first, from the pytorch cpu index (cp312 wheels exist):
+#   uv pip install --python .venv-boundprop/bin/python \
+#       --index-url https://download.pytorch.org/whl/cpu torch
+#   # 2) the numpy/z3 the repo code needs:
+#   uv pip install --python .venv-boundprop/bin/python numpy z3-solver
+#   # 3) auto_LiRPA from source (accepts the installed modern torch):
+#   uv pip install --python .venv-boundprop/bin/python \
+#       "git+https://github.com/Verified-Intelligence/auto_LiRPA.git"
+#
+# Then:  .venv-boundprop/bin/python run_boundprop_validate.py
+#
+# Validated with: torch 2.x (CPU), auto_LiRPA 0.7.2, numpy 2.x, z3-solver 5.x,
+# CPython 3.12.  (.venv-boundprop/ is gitignored.)
+#
+# Pinned set (for reference; install via the ordered commands above, not -r):
+torch
+auto_LiRPA @ git+https://github.com/Verified-Intelligence/auto_LiRPA.git
+numpy
+z3-solver

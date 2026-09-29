@@ -1,0 +1,39 @@
+{
+  "zero_margin_demo": {
+    "solver_proved": true,
+    "grid_strict_violations": 9170,
+    "grid_tol_violations": 0,
+    "grid_points": 40401,
+    "float_fraction_above_zero": 0.24091,
+    "float_max_value": 1.1102230246251565e-16
+  },
+  "error_bounds": {
+    "adversarial": 4.662936703425659e-15,
+    "toy_model": 1.1034827428953205e-13
+  },
+  "slack": 1e-09,
+  "slack_certificates": [
+    {
+      "claim": "removal: edited head A <= -slack on A's HIGH region",
+      "proved": true,
+      "status": "proved (no counterexample exists)"
+    },
+    {
+      "claim": "preservation: edited head B >= slack on B's HIGH region",
+      "proved": true,
+      "status": "proved (no counterexample exists)"
+    },
+    {
+      "claim": "preservation: edited head B <= -slack on B's LOW region",
+      "proved": true,
+      "status": "proved (no counterexample exists)"
+    },
+    {
+      "claim": "control: unedited head A >= slack on A's HIGH region",
+      "proved": true,
+      "status": "proved (no counterexample exists)"
+    }
+  ],
+  "all_carry_over": true,
+  "seconds": 11.5
+}

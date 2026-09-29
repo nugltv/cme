@@ -1,0 +1,48 @@
+{
+  "acc": {
+    "A": 1.0,
+    "B": 1.0
+  },
+  "encoding_gap": 1.4210854715202004e-14,
+  "circuit": {
+    "heads": [
+      0
+    ],
+    "mlps": [
+      1,
+      5,
+      2
+    ]
+  },
+  "unedited": {
+    "probes": [
+      {
+        "bound": 8.0,
+        "refuted": true,
+        "status": "refuted (a quote-only change moves the readout by more than the bound)"
+      },
+      {
+        "bound": 64.0,
+        "refuted": true,
+        "status": "refuted (a quote-only change moves the readout by more than the bound)"
+      }
+    ],
+    "influence_lower_bound": 64.0
+  },
+  "edited_influence": {
+    "influence": 0.0,
+    "exact_zero": true,
+    "largest_failing_bound": null,
+    "queries": 1,
+    "seconds": 0.4
+  },
+  "independence_radius": {
+    "radius": 0.05,
+    "saturated": true,
+    "queries": 2,
+    "seconds": 0.9
+  },
+  "eps_max": 0.05,
+  "tol": 0.005,
+  "seconds": 176.4490737915039
+}

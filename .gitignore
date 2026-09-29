@@ -1,0 +1,24 @@
+# virtual environments
+.venv/
+.venv-boundprop/
+venv/
+
+# python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# stdout dumps can leak local paths; the three frontier-probe logs in
+# results/ are kept deliberately (Table III and Fig. 3 rest on them).
+*.log
+!results/rung2_*.log
+
+# generated figure images (regenerate with figures/make_figures.py)
+figures/*.png
+figures/*.pdf
+paper/figures/
+
+# editor / OS noise
+.DS_Store
+.vscode/
+.idea/

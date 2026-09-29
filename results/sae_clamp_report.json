@@ -1,0 +1,53 @@
+{
+  "accuracy": {
+    "A": 0.99925,
+    "B": 1.0
+  },
+  "sae_recon_mse": 7.063617269702497e-05,
+  "clamped_feature": [
+    12,
+    13,
+    28
+  ],
+  "clamp_accuracy": {
+    "A": 0.49825,
+    "B": 0.9885
+  },
+  "claims": {
+    "removal: skill A gone over A-region": {
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "grid_violations": 0,
+      "grid_agrees": true,
+      "counterexample": null
+    },
+    "preservation: skill B HIGH over B-high": {
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "grid_violations": 0,
+      "grid_agrees": true,
+      "counterexample": null
+    },
+    "preservation: skill B LOW over B-low": {
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "grid_violations": 0,
+      "grid_agrees": true,
+      "counterexample": null
+    }
+  },
+  "control_holds": true,
+  "radii": {
+    "sae_clamp": {
+      "removal": 0.5,
+      "preservation": 0.064453125
+    },
+    "ablation": {
+      "removal": 0.5,
+      "preservation": 0.099609375,
+      "circuit": [
+        3
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "config": {
+    "d_model": 64,
+    "n_heads": 4,
+    "n_layers": 2,
+    "d_mlp": 128,
+    "L": 7,
+    "noise_vars": 448
+  },
+  "acc": {
+    "A": 1.0,
+    "B": 1.0
+  },
+  "edited_acc": {
+    "A": 0.5,
+    "B": 1.0
+  },
+  "chance_A": 0.5,
+  "circuit": "attention knockout of quote positions [0, 1, 2] in all 2 layers",
+  "rows": [
+    {
+      "claim": "removal (A readout <= 0 over all TQ-positive seqs)",
+      "n": 32,
+      "certified": 0.009066406250000002,
+      "pgd": 0.03
+    },
+    {
+      "claim": "preservation (B > 0 over all TB-positive seqs)",
+      "n": 32,
+      "certified": 0.007896875000000001,
+      "pgd": 0.05
+    },
+    {
+      "claim": "preservation (B <= 0 over all TB-negative seqs)",
+      "n": 32,
+      "certified": 0.00984609375,
+      "pgd": 0.1
+    }
+  ],
+  "eps_max": 0.05,
+  "tol": 0.0005,
+  "seconds": 540.6583902835846
+}

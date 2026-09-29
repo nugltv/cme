@@ -1,0 +1,31 @@
+{
+  "accuracy": {
+    "A": 0.99925,
+    "B": 1.0
+  },
+  "circuit_A": [
+    3
+  ],
+  "forward_gap": 3.552713678800501e-15,
+  "rows": [
+    {
+      "claim": "removal (A nonpositive over A-region)",
+      "alirpa": 0.5,
+      "z3": 0.5,
+      "sound": true
+    },
+    {
+      "claim": "preservation (B positive over B-high)",
+      "alirpa": 0.099609375,
+      "z3": 0.099609375,
+      "sound": true
+    },
+    {
+      "claim": "preservation (B nonpositive over B-low)",
+      "alirpa": 0.099609375,
+      "z3": 0.099609375,
+      "sound": true
+    }
+  ],
+  "all_sound": true
+}

@@ -1,0 +1,12 @@
+{
+  "n_reference_inputs": 40626,
+  "worst_reference_logitA": -0.29999999999997246,
+  "descriptive_delta_star": 0.29999999999997246,
+  "region_proved": false,
+  "region_counterexample": [
+    0.8152997002997003,
+    0.0
+  ],
+  "region_counterexample_logitA": 0.00029970029965548095,
+  "survivor_gap_to_nearest_reference_x0": 0.0007002997002996114
+}

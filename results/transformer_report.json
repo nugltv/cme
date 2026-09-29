@@ -1,0 +1,115 @@
+{
+  "acc": {
+    "A": 1.0,
+    "B": 1.0
+  },
+  "encoding_gap": 1.4210854715202004e-14,
+  "control": {
+    "control A pos": {
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "seconds": 164.7
+    },
+    "control A neg": {
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "seconds": 21.4
+    },
+    "control B pos": {
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "seconds": 43.6
+    },
+    "control B neg": {
+      "proved": true,
+      "status": "proved (no counterexample exists)",
+      "seconds": 80.2
+    }
+  },
+  "control_radii": {
+    "removal": {
+      "radius": null,
+      "saturated": false
+    },
+    "preservation": {
+      "radius": 0.034375,
+      "saturated": false
+    },
+    "natural": {
+      "A pos": {
+        "radius": 0.021875000000000002,
+        "saturated": false
+      },
+      "A neg": {
+        "radius": 0.034375,
+        "saturated": false
+      },
+      "B pos": {
+        "radius": 0.037500000000000006,
+        "saturated": false
+      },
+      "B neg": {
+        "radius": 0.034375,
+        "saturated": false
+      }
+    }
+  },
+  "circuit": [
+    [
+      "head",
+      0
+    ],
+    [
+      "mlp",
+      1
+    ],
+    [
+      "mlp",
+      5
+    ],
+    [
+      "mlp",
+      2
+    ]
+  ],
+  "edits": [
+    {
+      "edit": "ablation (circuit)",
+      "note": "atoms [('head', 0), ('mlp', 1), ('mlp', 5), ('mlp', 2)] switched off",
+      "tests_pass": true,
+      "removal_proved": true,
+      "preservation_proved": true,
+      "proofs": {
+        "removal (A pos -> nonpositive)": {
+          "proved": true,
+          "status": "proved (no counterexample exists)",
+          "seconds": 0.2
+        },
+        "preservation B pos": {
+          "proved": true,
+          "status": "proved (no counterexample exists)",
+          "seconds": 32.0
+        },
+        "preservation B neg": {
+          "proved": true,
+          "status": "proved (no counterexample exists)",
+          "seconds": 19.1
+        }
+      },
+      "removal_radius": {
+        "radius": 0.015625,
+        "saturated": false
+      },
+      "preservation_radius": {
+        "radius": 0.0125,
+        "saturated": false
+      },
+      "queries": 18
+    }
+  ],
+  "eps0": 0.005,
+  "eps_max": 0.05,
+  "tol": 0.005,
+  "slack": 1e-06,
+  "seconds": 2241.504114151001
+}

@@ -1,0 +1,425 @@
+{
+  "tidy_circuit": [
+    3
+  ],
+  "tidy": [
+    {
+      "edit": "control (no edit)",
+      "note": "yardstick: the working skill MUST listen to x0",
+      "influence_A": {
+        "influence": 22.001248411576476,
+        "exact_zero": false,
+        "largest_failing_bound": 22.00049180892812,
+        "counterexample_pair": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.33462131225659614,
+            1.0
+          ]
+        ],
+        "queries": 19,
+        "seconds": 28.06
+      },
+      "influence_B": {
+        "influence": 0.006160975724769681,
+        "exact_zero": false,
+        "largest_failing_bound": 0.005390853759173471,
+        "counterexample_pair": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.9772146143488916,
+            1.0
+          ]
+        ],
+        "queries": 19,
+        "seconds": 32.97
+      }
+    },
+    {
+      "edit": "ablation",
+      "note": "neurons [3] switched off",
+      "influence_A": {
+        "influence": 0.0006655108058157818,
+        "exact_zero": false,
+        "largest_failing_bound": 0.0,
+        "counterexample_pair": [
+          [
+            0.5,
+            0.05445048497775044
+          ],
+          [
+            1.0,
+            0.05445048497775044
+          ]
+        ],
+        "queries": 16,
+        "seconds": 9.9
+      },
+      "influence_B": {
+        "influence": 0.006930886290528489,
+        "exact_zero": false,
+        "largest_failing_bound": 0.006160787813803101,
+        "counterexample_pair": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        "queries": 19,
+        "seconds": 11.53
+      }
+    },
+    {
+      "edit": "weight edit",
+      "note": "wires from neurons [3] to head A cut",
+      "influence_A": {
+        "influence": 0.0006655108058157818,
+        "exact_zero": false,
+        "largest_failing_bound": 0.0,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.7382485890272159
+          ],
+          [
+            0.5,
+            0.7382485890272159
+          ]
+        ],
+        "queries": 16,
+        "seconds": 10.11
+      },
+      "influence_B": {
+        "influence": 0.006160975724769681,
+        "exact_zero": false,
+        "largest_failing_bound": 0.005390853759173471,
+        "counterexample_pair": [
+          [
+            0.0,
+            0.7794637579614346
+          ],
+          [
+            0.9772130735943648,
+            0.7794637579614346
+          ]
+        ],
+        "queries": 19,
+        "seconds": 31.94
+      }
+    },
+    {
+      "edit": "steering targeted (dose 4)",
+      "note": "smallest dose that passes the tests",
+      "influence_A": {
+        "influence": 0.000555663873181814,
+        "exact_zero": false,
+        "largest_failing_bound": 0.0,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.05445048497775044
+          ],
+          [
+            0.5,
+            0.05445048497775044
+          ]
+        ],
+        "queries": 20,
+        "seconds": 14.75
+      },
+      "influence_B": {
+        "influence": 0.006931209046605257,
+        "exact_zero": false,
+        "largest_failing_bound": 0.006161074708093561,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.7779423977396194
+          ],
+          [
+            0.018456314278893198,
+            0.7779423977396194
+          ]
+        ],
+        "queries": 19,
+        "seconds": 14.41
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 4)",
+      "note": "smallest dose that passes the tests",
+      "influence_A": {
+        "influence": 0.0005556506465394014,
+        "exact_zero": false,
+        "largest_failing_bound": 0.0,
+        "counterexample_pair": [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "queries": 20,
+        "seconds": 14.35
+      },
+      "influence_B": {
+        "influence": 0.006892016004325404,
+        "exact_zero": false,
+        "largest_failing_bound": 0.006126236448289248,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.7875827533549722
+          ],
+          [
+            0.0,
+            0.7875827533549722
+          ]
+        ],
+        "queries": 19,
+        "seconds": 13.96
+      }
+    }
+  ],
+  "messy_circuit": [
+    1
+  ],
+  "messy": [
+    {
+      "edit": "control (no edit)",
+      "note": "yardstick: the working skill MUST listen to x0",
+      "influence_A": {
+        "influence": 62.84859212666228,
+        "exact_zero": false,
+        "largest_failing_bound": 62.848011270912494,
+        "counterexample_pair": [
+          [
+            0.0,
+            0.9999844071707941
+          ],
+          [
+            1.0,
+            0.9999844071707941
+          ]
+        ],
+        "queries": 21,
+        "seconds": 59.06
+      },
+      "influence_B": {
+        "influence": 3.415278941794927,
+        "exact_zero": false,
+        "largest_failing_bound": 3.4147091588550214,
+        "counterexample_pair": [
+          [
+            4.5841176338138465e-05,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "queries": 21,
+        "seconds": 72.98
+      }
+    },
+    {
+      "edit": "ablation",
+      "note": "neurons [1] switched off",
+      "influence_A": {
+        "influence": 10.322240068163307,
+        "exact_zero": false,
+        "largest_failing_bound": 10.32155805692656,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.6224804561754653
+          ],
+          [
+            0.0,
+            0.6224804561754653
+          ]
+        ],
+        "queries": 19,
+        "seconds": 35.14
+      },
+      "influence_B": {
+        "influence": 3.751783885502974,
+        "exact_zero": false,
+        "largest_failing_bound": 3.7512169795063732,
+        "counterexample_pair": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.9999502734978704,
+            0.0
+          ]
+        ],
+        "queries": 21,
+        "seconds": 43.09
+      }
+    },
+    {
+      "edit": "weight edit",
+      "note": "wires from neurons [1] to head A cut",
+      "influence_A": {
+        "influence": 10.322240068163307,
+        "exact_zero": false,
+        "largest_failing_bound": 10.32155805692656,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.6224804561754653
+          ],
+          [
+            0.0,
+            0.6224804561754653
+          ]
+        ],
+        "queries": 19,
+        "seconds": 37.48
+      },
+      "influence_B": {
+        "influence": 3.415278941794927,
+        "exact_zero": false,
+        "largest_failing_bound": 3.4147091588550214,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            4.5841176338138465e-05,
+            0.0
+          ]
+        ],
+        "queries": 21,
+        "seconds": 78.48
+      }
+    },
+    {
+      "edit": "steering targeted (dose 8)",
+      "note": "smallest dose that passes the tests",
+      "influence_A": {
+        "influence": 10.322626109501524,
+        "exact_zero": false,
+        "largest_failing_bound": 10.321773211368043,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.6222329255158215
+          ],
+          [
+            0.0,
+            0.6222329255158215
+          ]
+        ],
+        "queries": 21,
+        "seconds": 53.39
+      },
+      "influence_B": {
+        "influence": 3.7520027942161907,
+        "exact_zero": false,
+        "largest_failing_bound": 3.7514311040144204,
+        "counterexample_pair": [
+          [
+            3.502755120473054e-05,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "queries": 21,
+        "seconds": 58.43
+      }
+    },
+    {
+      "edit": "steering diff-of-means (dose 8)",
+      "note": "smallest dose that passes the tests",
+      "influence_A": {
+        "influence": 8.709221983435349,
+        "exact_zero": false,
+        "largest_failing_bound": 8.708348177678007,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.0001089758067467576
+          ],
+          [
+            0.0,
+            0.0001089758067467576
+          ]
+        ],
+        "queries": 21,
+        "seconds": 161.38
+      },
+      "influence_B": {
+        "influence": 5.86999765634783,
+        "exact_zero": false,
+        "largest_failing_bound": 5.869406816120719,
+        "counterexample_pair": [
+          [
+            1.0,
+            0.3329515858105559
+          ],
+          [
+            0.0,
+            0.3329515858105559
+          ]
+        ],
+        "queries": 21,
+        "seconds": 221.93
+      }
+    }
+  ],
+  "illusion": {
+    "edit": "illusion edit (constructed)",
+    "note": "passes 40,401 test points; the leftover tent pathway still reads x0",
+    "influence_A": {
+      "influence": 0.6003816604614258,
+      "exact_zero": false,
+      "largest_failing_bound": 0.5995090126991273,
+      "counterexample_pair": [
+        [
+          0.8150004907420525,
+          0.0
+        ],
+        [
+          0.815600245248402,
+          0.0
+        ]
+      ],
+      "queries": 26,
+      "seconds": 0.22
+    },
+    "independence_pair": [
+      [
+        0.8147,
+        0.0
+      ],
+      [
+        0.8159000000000001,
+        0.0
+      ]
+    ],
+    "independence_gap": 0.300000000000078
+  },
+  "seconds": 1079.3529453277588
+}

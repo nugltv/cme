@@ -1,0 +1,348 @@
+{
+  "config": {
+    "d_model": 8,
+    "n_heads": 2,
+    "d_head": 4,
+    "d_mlp": 8
+  },
+  "groups": [
+    {
+      "label": "L=5 (step down)",
+      "L": 5,
+      "rows": [
+        {
+          "seed": 0,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 1,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 2,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 3,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "head",
+              0
+            ]
+          ],
+          "class": "single head"
+        },
+        {
+          "seed": 4,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 5,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 6,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 7,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        }
+      ]
+    },
+    {
+      "label": "L=6 (certified)",
+      "L": 6,
+      "rows": [
+        {
+          "seed": 0,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "mlp",
+              7
+            ],
+            [
+              "mlp",
+              3
+            ],
+            [
+              "mlp",
+              6
+            ],
+            [
+              "mlp",
+              0
+            ],
+            [
+              "mlp",
+              2
+            ]
+          ],
+          "class": "multi mlp"
+        },
+        {
+          "seed": 1,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "head",
+              1
+            ]
+          ],
+          "class": "single head"
+        },
+        {
+          "seed": 2,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 3,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "head",
+              0
+            ]
+          ],
+          "class": "single head"
+        },
+        {
+          "seed": 4,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 5,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "head",
+              0
+            ],
+            [
+              "mlp",
+              1
+            ],
+            [
+              "mlp",
+              5
+            ],
+            [
+              "mlp",
+              2
+            ]
+          ],
+          "class": "cross-component"
+        },
+        {
+          "seed": 6,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 7,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "head",
+              0
+            ]
+          ],
+          "class": "single head"
+        },
+        {
+          "seed": 8,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 9,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "mlp",
+              1
+            ],
+            [
+              "mlp",
+              2
+            ],
+            [
+              "mlp",
+              4
+            ],
+            [
+              "mlp",
+              5
+            ],
+            [
+              "mlp",
+              0
+            ],
+            [
+              "mlp",
+              6
+            ]
+          ],
+          "class": "multi mlp"
+        },
+        {
+          "seed": 10,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 11,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        }
+      ]
+    },
+    {
+      "label": "L=7 (step up)",
+      "L": 7,
+      "rows": [
+        {
+          "seed": 0,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 1,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "head",
+              1
+            ]
+          ],
+          "class": "single head"
+        },
+        {
+          "seed": 2,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": [
+            [
+              "mlp",
+              6
+            ]
+          ],
+          "class": "single mlp"
+        },
+        {
+          "seed": 3,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 4,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 5,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 6,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        },
+        {
+          "seed": 7,
+          "usable": true,
+          "acc_A": 1.0,
+          "acc_B": 1.0,
+          "circuit": null,
+          "class": "none"
+        }
+      ]
+    }
+  ],
+  "seconds": 1033.2498981952667,
+  "total_usable": 28,
+  "total_cross": 1
+}

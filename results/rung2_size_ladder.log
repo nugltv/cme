@@ -1,0 +1,38 @@
+
+=== baseline  d8 h1 mlp8  L4  (noise vars = 32) ===
+  trained 18s; acc A 1.0000 B 1.0000
+  encoding gap 1.4e-14 OK
+  hull A-pos eps=0.0: PROVED in 32.5s
+  hull A-pos eps=0.005: PROVED in 155.3s
+
+=== d8 h1 mlp8  L6  (noise vars = 48) ===
+  trained 21s; acc A 1.0000 B 1.0000
+  encoding gap 7.1e-15 OK
+  hull A-pos eps=0.0: PROVED in 39.8s
+  hull A-pos eps=0.005: PROVED in 229.9s
+
+=== d8 h1 mlp8  L8  (noise vars = 64) ===
+  trained 25s; acc A 0.9999 B 1.0000
+  encoding gap 1.4e-14 OK
+  hull A-pos eps=0.0: relaxation refuted in 27.7s
+  hull A-pos eps=0.005: relaxation refuted in 93.9s
+
+=== d12 h1 mlp12 L6  (noise vars = 72) ===
+  trained 24s; acc A 1.0000 B 1.0000
+  encoding gap 7.1e-15 OK
+  hull A-pos eps=0.0: PROVED in 30.7s
+  hull A-pos eps=0.005: unknown in 300.3s
+
+=== d16 h1 mlp16 L6  (noise vars = 96) ===
+  trained 30s; acc A 1.0000 B 1.0000
+  encoding gap 7.1e-15 OK
+  hull A-pos eps=0.0: PROVED in 119.8s
+  hull A-pos eps=0.005: unknown in 300.3s
+
+=== d16 h2 mlp32 L8 (orig)  (noise vars = 128) ===
+  trained 58s; acc A 1.0000 B 1.0000
+  encoding gap 1.4e-14 OK
+  hull A-pos eps=0.0: unknown in 300.5s
+  hull A-pos eps=0.005: unknown in 300.7s
+
+ALL DONE

@@ -1,0 +1,76 @@
+{
+  "models_trained": 160,
+  "edits_test_approved": 198,
+  "proved_genuinely_removed": 195,
+  "solver_unknown": 0,
+  "illusions": [
+    {
+      "d": 4,
+      "H": 24,
+      "l1": 0.0005,
+      "seed": 8,
+      "edit": [
+        11,
+        16,
+        21
+      ],
+      "counterexample": [
+        1.0,
+        0.510669,
+        0.0,
+        0.159972
+      ],
+      "counterexample_logit_numeric": 0.003929200600719662,
+      "pocket_volume_fraction": 0.0,
+      "tests_passed": {
+        "grid_points_removal": 625,
+        "random_points_removal": 1000
+      }
+    },
+    {
+      "d": 4,
+      "H": 24,
+      "l1": 0.001,
+      "seed": 18,
+      "edit": [
+        1,
+        18
+      ],
+      "counterexample": [
+        1.0,
+        0.000641,
+        1.0,
+        0.855361
+      ],
+      "counterexample_logit_numeric": 0.0013642048292941134,
+      "pocket_volume_fraction": 0.0,
+      "tests_passed": {
+        "grid_points_removal": 625,
+        "random_points_removal": 1000
+      }
+    },
+    {
+      "d": 5,
+      "H": 24,
+      "l1": 0.0,
+      "seed": 17,
+      "edit": [
+        16,
+        21
+      ],
+      "counterexample": [
+        1.0,
+        0.7438,
+        0.697112,
+        0.070066,
+        0.196238
+      ],
+      "counterexample_logit_numeric": 0.0025866048671576714,
+      "pocket_volume_fraction": 0.0,
+      "tests_passed": {
+        "grid_points_removal": 3125,
+        "random_points_removal": 1000
+      }
+    }
+  ]
+}

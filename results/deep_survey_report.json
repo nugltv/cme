@@ -1,0 +1,283 @@
+{
+  "rows": [
+    {
+      "seed": 0,
+      "usable": true,
+      "acc_A": 0.9943,
+      "acc_B": 0.9994,
+      "free_greedy": null,
+      "layer1_greedy": null,
+      "layer1_exhaustive": null
+    },
+    {
+      "seed": 1,
+      "usable": true,
+      "acc_A": 0.99565,
+      "acc_B": 0.9985,
+      "free_greedy": [
+        [
+          2,
+          6
+        ]
+      ],
+      "layer1_greedy": null,
+      "layer1_exhaustive": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ]
+    },
+    {
+      "seed": 2,
+      "usable": true,
+      "acc_A": 0.9926,
+      "acc_B": 0.99585,
+      "free_greedy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "layer1_greedy": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "layer1_exhaustive": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ]
+    },
+    {
+      "seed": 3,
+      "usable": false,
+      "acc_A": 0.98175,
+      "acc_B": 0.99725
+    },
+    {
+      "seed": 4,
+      "usable": true,
+      "acc_A": 0.99665,
+      "acc_B": 0.99765,
+      "free_greedy": [
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "layer1_greedy": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "layer1_exhaustive": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ]
+      ]
+    },
+    {
+      "seed": 5,
+      "usable": true,
+      "acc_A": 0.99375,
+      "acc_B": 0.99855,
+      "free_greedy": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "layer1_greedy": null,
+      "layer1_exhaustive": null
+    },
+    {
+      "seed": 6,
+      "usable": true,
+      "acc_A": 0.9947,
+      "acc_B": 0.9985,
+      "free_greedy": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "layer1_greedy": null,
+      "layer1_exhaustive": null
+    },
+    {
+      "seed": 7,
+      "usable": false,
+      "acc_A": 0.97205,
+      "acc_B": 0.99745
+    },
+    {
+      "seed": 8,
+      "usable": true,
+      "acc_A": 0.9947,
+      "acc_B": 0.99835,
+      "free_greedy": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "layer1_greedy": [
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "layer1_exhaustive": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ]
+    },
+    {
+      "seed": 9,
+      "usable": false,
+      "acc_A": 0.98315,
+      "acc_B": 0.99305
+    }
+  ],
+  "seconds": 419.72377157211304
+}

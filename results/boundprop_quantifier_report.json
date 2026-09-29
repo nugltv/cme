@@ -1,0 +1,32 @@
+{
+  "acc": {
+    "A": 1.0,
+    "B": 1.0
+  },
+  "edited_acc": {
+    "A": 0.5,
+    "B": 1.0
+  },
+  "rows": [
+    {
+      "claim": "removal over ALL TQ sequences (discrete closure)",
+      "n": 64,
+      "certified": 0.009066406250000002,
+      "pgd": 0.03
+    },
+    {
+      "claim": "removal over TQ-positive only (original M1)",
+      "n": 32,
+      "certified": 0.009066406250000002,
+      "pgd": 0.03
+    }
+  ],
+  "token_separation": {
+    "min": 2.939629077911377,
+    "median": 3.496270537376404,
+    "max": 3.878979206085205,
+    "pairs": 6
+  },
+  "ratio": 324.23310811947965,
+  "seconds": 585.0058407783508
+}
