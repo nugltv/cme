@@ -182,7 +182,15 @@ They are written to `paper/figures/fig_<role>.pdf`, authored at their final
 printed size (3.45 in for a column, 7.05 in for a full-width figure) in the
 paper's typefaces. If PyMuPDF is installed, each build also measures its printed
 text sizes and fails on any label below the floor; without PyMuPDF that check is
-skipped. Rebuilds are byte-identical.
+skipped.
+
+Rebuilds are byte-identical to the paper's figure PDFs **only** with the pinned
+versions in `requirements.txt` and the URW *Nimbus Roman* font installed
+(Debian/Ubuntu: `apt install fonts-urw-base35`; then clear matplotlib's font
+cache, `~/.cache/matplotlib`). Without the font, matplotlib falls back to STIX
+and `make_figures.py` prints a warning: every plotted value is the same, but the
+typeface and text spacing differ from the figures in the paper. A different
+matplotlib version can likewise shift layout slightly without changing the data.
 
 `make_figures.py` without `--paper` builds the on-screen variants instead: wider,
 self-titled versions of the same results. With no arguments it builds all of

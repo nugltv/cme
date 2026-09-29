@@ -1,5 +1,6 @@
 # The EXACT (SMT) pipeline — pure and dependency-light.
 # Everything except the run_boundprop_*.py scripts runs with just these.
-numpy
-z3-solver
-matplotlib      # only for figures/make_figures.py — not needed to run any proof
+# Versions used for every committed report and figure (Python 3.14):
+numpy==2.5.1
+z3-solver==4.16.0.0
+matplotlib==3.11.1      # only for figures/make_figures.py — not needed to run any proof

@@ -1598,9 +1598,32 @@ PAPER_RC = {
 }
 
 
+_FONT_WARNED = []
+
+
+def _warn_if_paper_font_missing():
+    """The paper figures are set in URW Nimbus Roman (the paper's body face).
+    Without it matplotlib falls back to STIX: every plotted value is the same,
+    but the typeface and text spacing differ from the paper's copies, so the
+    rebuilt PDFs are no longer byte-identical. Warn once, loudly."""
+    if _FONT_WARNED:
+        return
+    _FONT_WARNED.append(True)
+    from matplotlib import font_manager
+    try:
+        font_manager.findfont("Nimbus Roman", fallback_to_default=False)
+    except ValueError:
+        print("WARNING: font 'Nimbus Roman' not found — paper figures will use "
+              "STIX instead and will not match the paper's copies byte for "
+              "byte (the plotted data are unchanged). Install the URW base35 "
+              "fonts (Debian/Ubuntu: apt install fonts-urw-base35) and clear "
+              "matplotlib's font cache (~/.cache/matplotlib) to match exactly.")
+
+
 def paper_figure(fn):
     """Decorator: build a paper figure under the paper rc settings."""
     def wrapped():
+        _warn_if_paper_font_missing()
         with plt.rc_context(PAPER_RC):
             fn()
     wrapped.__name__, wrapped.__doc__ = fn.__name__, fn.__doc__
@@ -2167,8 +2190,10 @@ def paper_radius():
     # stays distinguishable in greyscale
     axA.add_patch(Rectangle((0, edge), 1, 1 - edge, fc=FILL, ec="none",
                             zorder=0))
-    axA.add_patch(Rectangle((0, edge), 1, lo - edge, fc="none", ec="none",
-                            hatch="////", lw=0, zorder=1))
+    axA.fill_between([0, 1], edge, lo, facecolor="none", hatch="////",
+                     lw=0, zorder=1)       # a collection, not a patch: PDFium
+                                           # (Chrome's viewer) drops pattern-only
+                                           # patches but renders this
     axA.add_patch(Rectangle((0, lo), 1, 1 - lo, fill=False, ec=INK2, lw=0.8,
                             ls=(0, (3, 1.5)), zorder=3))
     axA.text(0.5, 0.80, "$R$", ha="center", va="center", color=INK)
